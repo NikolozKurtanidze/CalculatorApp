@@ -7,16 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 namespace Calculator
 {
     public partial class Form1 : Form
     {
-        int firstElement;
-        int secondElement;
-        bool OperatorIsPressed = false;
-        bool LastOperatorEquals = false;
-        string Operation;
+        double a = 0, b = 0, c = 0;
+        char operation;
+
         public Form1()
         {
             InitializeComponent();
@@ -24,98 +21,52 @@ namespace Calculator
 
         private void NumberButtons_Click(object sender, EventArgs e)
         {
-            if (sender is Button button)
-            {
-                if (!OperatorIsPressed)
-                {
-                    MainScreen.Text += button.Text;
-                }
-                else
-                {
-                    MainScreen.Text += button.Text;
-                }
-            }
+            MainScreen.Text += (sender as Button).Text;
         }
-        static int Plus(int a, int b)
+        private void btnClear_Click(object sender, EventArgs e)
         {
-            return a + b;
+            operation = ' ';
+            a = 0;
+            b = 0;
+            c = 0;
+            MainScreen.Clear();
         }
-        static int Minus(int a, int b)
+
+        private void btnBack_Click(object sender, EventArgs e)
         {
-            return a - b;
+            var tmp = MainScreen.Text.Substring(0, MainScreen.Text.Length - 1);
+            MainScreen.Text = tmp;
         }
-        static int Multiply(int a, int b)
+
+        private void btnSQRT_Click(object sender, EventArgs e)
         {
-            return a * b;
-        }
-        static int Division(int a, int b)
-        {
-            return a / b;
+            a = double.Parse(MainScreen.Text);
+            c = Math.Pow(a, 0.5);
+            MainScreen.Text = c.ToString();
         }
         private void OperationButton_Click(object sender, EventArgs e)
         {
-            if (sender is Button button)
-            {
-                if (!string.IsNullOrWhiteSpace(MainScreen.Text))
-                {
-                    if (!OperatorIsPressed)
-                    {
-                        OperatorIsPressed = true;
-                        Operation = button.Text;
-                        MainScreen.Text += button.Text;
-                    }
-                    else
-                    {
-                        Application.Exit();
-                    }
-                }
-            }
+            a = double.Parse(MainScreen.Text);
+            operation = (sender as Button).Text[0];
+            MainScreen.Clear();
         }
         private void BtnEquals_Click(object sender, EventArgs e)
         {
-            if(sender is Button button)
+            b = double.Parse(MainScreen.Text);
+            switch (operation)
             {
-                if (!OperatorIsPressed)
-                {
-                    Application.Exit();
-                }
-                else
-                {
-                    if (!LastOperatorEquals)
-                    {
-                        switch (Operation)
-                        {
-                            case "+":
-                                string[] strarr = MainScreen.Text.Split('+');
-                                firstElement = int.Parse(strarr[0]);
-                                secondElement = int.Parse(strarr[1]);
-                                MainScreen.Text = (firstElement + secondElement).ToString();
-                                break;
-                            case "-":
-                                strarr = MainScreen.Text.Split('-');
-                                firstElement = int.Parse(strarr[0]);
-                                secondElement = int.Parse(strarr[1]);
-                                MainScreen.Text = (firstElement - secondElement).ToString();
-                                break;
-                            case "*":
-                                strarr = MainScreen.Text.Split('*');
-                                firstElement = int.Parse(strarr[0]);
-                                secondElement = int.Parse(strarr[1]);
-                                MainScreen.Text = (firstElement * secondElement).ToString();
-                                break;
-                            case "/":
-                                strarr = MainScreen.Text.Split('/');
-                                firstElement = int.Parse(strarr[0]);
-                                secondElement = int.Parse(strarr[1]);
-                                MainScreen.Text = (firstElement / secondElement).ToString();
-                                break;
-                        }
-                    }
-                    else
-                    {   
-                    }
-                }
+                case '+': c = a + b;
+                    break;
+                case '-': c = a - b;
+                    break;
+                case '/': c = a / b;
+                    break;
+                case 'X': c = a * b;
+                    break;
             }
+            MainScreen.Text = c.ToString();
         }
+
+
     }
 }

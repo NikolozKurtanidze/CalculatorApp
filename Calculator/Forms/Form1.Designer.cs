@@ -46,6 +46,8 @@
             this.btnClear = new System.Windows.Forms.Button();
             this.MainScreen = new System.Windows.Forms.TextBox();
             this.btnEquals = new System.Windows.Forms.Button();
+            this.btnDot = new System.Windows.Forms.Button();
+            this.btnSQRT = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnOne
@@ -196,6 +198,7 @@
             this.btnBack.TabIndex = 14;
             this.btnBack.Text = "<-";
             this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // btnClear
             // 
@@ -205,12 +208,14 @@
             this.btnClear.TabIndex = 15;
             this.btnClear.Text = "C";
             this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // MainScreen
             // 
             this.MainScreen.AccessibleRole = System.Windows.Forms.AccessibleRole.Sound;
             this.MainScreen.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.MainScreen.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.MainScreen.Font = new System.Drawing.Font("Microsoft Sans Serif", 39F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MainScreen.ForeColor = System.Drawing.SystemColors.WindowText;
             this.MainScreen.ImeMode = System.Windows.Forms.ImeMode.Hiragana;
             this.MainScreen.Location = new System.Drawing.Point(12, 12);
@@ -230,12 +235,39 @@
             this.btnEquals.UseVisualStyleBackColor = true;
             this.btnEquals.Click += new System.EventHandler(this.BtnEquals_Click);
             // 
+            // btnDot
+            // 
+            this.btnDot.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDot.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnDot.Location = new System.Drawing.Point(182, 353);
+            this.btnDot.Name = "btnDot";
+            this.btnDot.Size = new System.Drawing.Size(79, 62);
+            this.btnDot.TabIndex = 18;
+            this.btnDot.Text = ".";
+            this.btnDot.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnDot.UseVisualStyleBackColor = true;
+            this.btnDot.Click += new System.EventHandler(this.NumberButtons_Click);
+            // 
+            // btnSQRT
+            // 
+            this.btnSQRT.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnSQRT.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSQRT.Location = new System.Drawing.Point(12, 81);
+            this.btnSQRT.Name = "btnSQRT";
+            this.btnSQRT.Size = new System.Drawing.Size(79, 62);
+            this.btnSQRT.TabIndex = 19;
+            this.btnSQRT.Text = "√";
+            this.btnSQRT.UseVisualStyleBackColor = true;
+            this.btnSQRT.Click += new System.EventHandler(this.btnSQRT_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(357, 424);
+            this.ClientSize = new System.Drawing.Size(350, 423);
+            this.Controls.Add(this.btnSQRT);
+            this.Controls.Add(this.btnDot);
             this.Controls.Add(this.btnEquals);
             this.Controls.Add(this.MainScreen);
             this.Controls.Add(this.btnClear);
@@ -281,6 +313,8 @@
         public System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.TextBox MainScreen;
         private System.Windows.Forms.Button btnEquals;
+        private System.Windows.Forms.Button btnDot;
+        public System.Windows.Forms.Button btnSQRT;
     }
 }
 
