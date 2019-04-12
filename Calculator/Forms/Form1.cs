@@ -33,51 +33,29 @@ namespace Calculator
             c = 0;
             MainScreen.Clear();
         }
-
         private void btnBack_Click(object sender, EventArgs e)
         {
             var tmp = MainScreen.Text.Substring(0, MainScreen.Text.Length - 1);
             MainScreen.Text = tmp;
         }
-
         private void btnSQRT_Click(object sender, EventArgs e)
         {
-            a = double.Parse(MainScreen.Text);
-            c = Math.Pow(a, 0.5);
-            MainScreen.Text = c.ToString();
+            if (!string.IsNullOrEmpty(MainScreen.Text))
+            {
+                a = double.Parse(MainScreen.Text);
+                c = Math.Pow(a, 0.5);
+                MainScreen.Text = c.ToString();
+            }
         }
-
-        private void SideBar_MouseHover(object sender, EventArgs e)
+        private void btnSquare_Click(object sender, EventArgs e)
         {
-            if (!pulled)
+            if (!string.IsNullOrEmpty(MainScreen.Text))
             {
-                pulled = true;
-                timer.Enabled = true;
+                a = double.Parse(MainScreen.Text);
+                c = a * a;
+                MainScreen.Text = c.ToString();
             }
         }
-
-        private void Timer_Tick(object sender, EventArgs e)
-         {
-            int length = 5;
-            counter++;
-            if (counter != length)
-            {
-                SideBar.Location = new Point(SideBar.Location.X + 1, SideBar.Location.Y);
-            }
-            else if(counter == length)
-            {
-                counter = 0;
-                while(counter < length)
-                {
-                    SideBar.Location = new Point(SideBar.Location.X - 1, SideBar.Location.Y);
-                    counter++;
-                }
-                counter = length;
-                pulled = false;
-                timer.Enabled = false;
-            }
-        }
-
         private void OperationButton_Click(object sender, EventArgs e)
         {
             a = double.Parse(MainScreen.Text);
@@ -100,7 +78,5 @@ namespace Calculator
             }
             MainScreen.Text = c.ToString();
         }
-
-
     }
 }
