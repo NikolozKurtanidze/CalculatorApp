@@ -11,8 +11,10 @@ namespace Calculator
 {
     public partial class Form1 : Form
     {
+        int counter = 0;
         double a = 0, b = 0, c = 0;
         char operation;
+        bool pulled = false;
 
         public Form1()
         {
@@ -44,6 +46,38 @@ namespace Calculator
             c = Math.Pow(a, 0.5);
             MainScreen.Text = c.ToString();
         }
+
+        private void SideBar_MouseHover(object sender, EventArgs e)
+        {
+            if (!pulled)
+            {
+                pulled = true;
+                timer.Enabled = true;
+            }
+        }
+
+        private void Timer_Tick(object sender, EventArgs e)
+         {
+            int length = 5;
+            counter++;
+            if (counter != length)
+            {
+                SideBar.Location = new Point(SideBar.Location.X + 1, SideBar.Location.Y);
+            }
+            else if(counter == length)
+            {
+                counter = 0;
+                while(counter < length)
+                {
+                    SideBar.Location = new Point(SideBar.Location.X - 1, SideBar.Location.Y);
+                    counter++;
+                }
+                counter = length;
+                pulled = false;
+                timer.Enabled = false;
+            }
+        }
+
         private void OperationButton_Click(object sender, EventArgs e)
         {
             a = double.Parse(MainScreen.Text);
