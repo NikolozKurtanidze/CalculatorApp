@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Calculator.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -92,7 +93,8 @@ namespace Calculator
             else
             {
                 isCollapsed = false;
-                btnExpandPanel.Text = "<-";
+                btnExpandPanel.Image = Resources.Left;
+               
                 VisibilityOn();
                 timer.Stop();
             }
@@ -107,7 +109,7 @@ namespace Calculator
             {
                 isCollapsed = true;
                 VisibilityOff();
-                btnExpandPanel.Text = "->";
+                btnExpandPanel.Image = Resources.right;
                 timer.Stop();
             }
         }

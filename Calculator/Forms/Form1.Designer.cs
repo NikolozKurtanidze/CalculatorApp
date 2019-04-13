@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btnOne = new System.Windows.Forms.Button();
             this.btnTwo = new System.Windows.Forms.Button();
             this.btnThree = new System.Windows.Forms.Button();
@@ -326,11 +327,11 @@
             this.btnExpandPanel.FlatAppearance.BorderSize = 0;
             this.btnExpandPanel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExpandPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExpandPanel.Image = ((System.Drawing.Image)(resources.GetObject("btnExpandPanel.Image")));
             this.btnExpandPanel.Location = new System.Drawing.Point(3, 13);
             this.btnExpandPanel.Name = "btnExpandPanel";
             this.btnExpandPanel.Size = new System.Drawing.Size(40, 33);
             this.btnExpandPanel.TabIndex = 21;
-            this.btnExpandPanel.Text = "->";
             this.btnExpandPanel.UseVisualStyleBackColor = false;
             this.btnExpandPanel.Click += new System.EventHandler(this.btnExpandPanel_Click);
             // 
@@ -408,6 +409,7 @@
             this.Controls.Add(this.btnOne);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.HelpButton = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(409, 459);
             this.MinimumSize = new System.Drawing.Size(409, 459);
             this.Name = "Form1";
