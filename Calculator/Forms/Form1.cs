@@ -111,6 +111,7 @@ namespace Calculator
                 timer.Stop();
             }
         }
+
         private void OperationButton_Click(object sender, EventArgs e)
         {
             a = double.Parse(MainScreen.Text);

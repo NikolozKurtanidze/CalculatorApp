@@ -52,14 +52,16 @@
             this.btnSquare = new System.Windows.Forms.Button();
             this.btnExpandPanel = new System.Windows.Forms.Button();
             this.SidePanel = new System.Windows.Forms.Panel();
-            this.timer = new System.Windows.Forms.Timer(this.components);
-            this.btnCurrencyCalc = new System.Windows.Forms.Button();
             this.btnWeightCalc = new System.Windows.Forms.Button();
+            this.btnCurrencyCalc = new System.Windows.Forms.Button();
+            this.timer = new System.Windows.Forms.Timer(this.components);
             this.SidePanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnOne
             // 
+            this.btnOne.FlatAppearance.BorderSize = 0;
+            this.btnOne.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOne.Location = new System.Drawing.Point(52, 282);
             this.btnOne.Name = "btnOne";
             this.btnOne.Size = new System.Drawing.Size(79, 62);
@@ -70,6 +72,8 @@
             // 
             // btnTwo
             // 
+            this.btnTwo.FlatAppearance.BorderSize = 0;
+            this.btnTwo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTwo.Location = new System.Drawing.Point(137, 282);
             this.btnTwo.Name = "btnTwo";
             this.btnTwo.Size = new System.Drawing.Size(79, 62);
@@ -80,6 +84,8 @@
             // 
             // btnThree
             // 
+            this.btnThree.FlatAppearance.BorderSize = 0;
+            this.btnThree.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThree.Location = new System.Drawing.Point(222, 282);
             this.btnThree.Name = "btnThree";
             this.btnThree.Size = new System.Drawing.Size(79, 62);
@@ -90,6 +96,8 @@
             // 
             // btnFour
             // 
+            this.btnFour.FlatAppearance.BorderSize = 0;
+            this.btnFour.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFour.Location = new System.Drawing.Point(52, 214);
             this.btnFour.Name = "btnFour";
             this.btnFour.Size = new System.Drawing.Size(79, 62);
@@ -100,6 +108,8 @@
             // 
             // btnFive
             // 
+            this.btnFive.FlatAppearance.BorderSize = 0;
+            this.btnFive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFive.Location = new System.Drawing.Point(137, 214);
             this.btnFive.Name = "btnFive";
             this.btnFive.Size = new System.Drawing.Size(79, 62);
@@ -110,6 +120,8 @@
             // 
             // btnSix
             // 
+            this.btnSix.FlatAppearance.BorderSize = 0;
+            this.btnSix.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSix.Location = new System.Drawing.Point(222, 214);
             this.btnSix.Name = "btnSix";
             this.btnSix.Size = new System.Drawing.Size(79, 62);
@@ -120,6 +132,8 @@
             // 
             // btnSeven
             // 
+            this.btnSeven.FlatAppearance.BorderSize = 0;
+            this.btnSeven.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSeven.Location = new System.Drawing.Point(52, 146);
             this.btnSeven.Name = "btnSeven";
             this.btnSeven.Size = new System.Drawing.Size(79, 62);
@@ -130,6 +144,8 @@
             // 
             // btnEight
             // 
+            this.btnEight.FlatAppearance.BorderSize = 0;
+            this.btnEight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEight.Location = new System.Drawing.Point(137, 146);
             this.btnEight.Name = "btnEight";
             this.btnEight.Size = new System.Drawing.Size(79, 62);
@@ -140,6 +156,8 @@
             // 
             // btnNine
             // 
+            this.btnNine.FlatAppearance.BorderSize = 0;
+            this.btnNine.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNine.Location = new System.Drawing.Point(222, 146);
             this.btnNine.Name = "btnNine";
             this.btnNine.Size = new System.Drawing.Size(79, 62);
@@ -150,7 +168,9 @@
             // 
             // btnZero
             // 
-            this.btnZero.Location = new System.Drawing.Point(137, 350);
+            this.btnZero.FlatAppearance.BorderSize = 0;
+            this.btnZero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnZero.Location = new System.Drawing.Point(137, 345);
             this.btnZero.Name = "btnZero";
             this.btnZero.Size = new System.Drawing.Size(79, 62);
             this.btnZero.TabIndex = 9;
@@ -160,6 +180,8 @@
             // 
             // btnPlus
             // 
+            this.btnPlus.FlatAppearance.BorderSize = 0;
+            this.btnPlus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPlus.Location = new System.Drawing.Point(307, 282);
             this.btnPlus.Name = "btnPlus";
             this.btnPlus.Size = new System.Drawing.Size(79, 62);
@@ -170,6 +192,8 @@
             // 
             // btnMinus
             // 
+            this.btnMinus.FlatAppearance.BorderSize = 0;
+            this.btnMinus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMinus.Location = new System.Drawing.Point(307, 214);
             this.btnMinus.Name = "btnMinus";
             this.btnMinus.Size = new System.Drawing.Size(79, 62);
@@ -180,6 +204,8 @@
             // 
             // btnMultiply
             // 
+            this.btnMultiply.FlatAppearance.BorderSize = 0;
+            this.btnMultiply.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMultiply.Location = new System.Drawing.Point(307, 146);
             this.btnMultiply.Name = "btnMultiply";
             this.btnMultiply.Size = new System.Drawing.Size(79, 62);
@@ -190,6 +216,8 @@
             // 
             // btnDivision
             // 
+            this.btnDivision.FlatAppearance.BorderSize = 0;
+            this.btnDivision.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDivision.Location = new System.Drawing.Point(307, 78);
             this.btnDivision.Name = "btnDivision";
             this.btnDivision.Size = new System.Drawing.Size(79, 62);
@@ -200,6 +228,8 @@
             // 
             // btnBack
             // 
+            this.btnBack.FlatAppearance.BorderSize = 0;
+            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBack.Location = new System.Drawing.Point(222, 78);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(79, 62);
@@ -210,6 +240,8 @@
             // 
             // btnClear
             // 
+            this.btnClear.FlatAppearance.BorderSize = 0;
+            this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClear.Location = new System.Drawing.Point(137, 78);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(79, 62);
@@ -226,7 +258,7 @@
             this.MainScreen.Font = new System.Drawing.Font("Microsoft Sans Serif", 39F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MainScreen.ForeColor = System.Drawing.SystemColors.WindowText;
             this.MainScreen.ImeMode = System.Windows.Forms.ImeMode.Hiragana;
-            this.MainScreen.Location = new System.Drawing.Point(52, 9);
+            this.MainScreen.Location = new System.Drawing.Point(52, 12);
             this.MainScreen.Multiline = true;
             this.MainScreen.Name = "MainScreen";
             this.MainScreen.Size = new System.Drawing.Size(334, 49);
@@ -234,6 +266,8 @@
             // 
             // btnEquals
             // 
+            this.btnEquals.FlatAppearance.BorderSize = 0;
+            this.btnEquals.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEquals.Location = new System.Drawing.Point(306, 350);
             this.btnEquals.Name = "btnEquals";
             this.btnEquals.Size = new System.Drawing.Size(79, 62);
@@ -245,6 +279,8 @@
             // 
             // btnDot
             // 
+            this.btnDot.FlatAppearance.BorderSize = 0;
+            this.btnDot.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDot.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDot.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnDot.Location = new System.Drawing.Point(222, 350);
@@ -258,7 +294,8 @@
             // 
             // btnSQRT
             // 
-            this.btnSQRT.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnSQRT.FlatAppearance.BorderSize = 0;
+            this.btnSQRT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSQRT.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSQRT.Location = new System.Drawing.Point(52, 78);
             this.btnSQRT.Name = "btnSQRT";
@@ -270,7 +307,8 @@
             // 
             // btnSquare
             // 
-            this.btnSquare.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnSquare.FlatAppearance.BorderSize = 0;
+            this.btnSquare.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSquare.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSquare.Location = new System.Drawing.Point(52, 350);
             this.btnSquare.Name = "btnSquare";
@@ -282,7 +320,8 @@
             // 
             // btnExpandPanel
             // 
-            this.btnExpandPanel.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnExpandPanel.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnExpandPanel.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.btnExpandPanel.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnExpandPanel.FlatAppearance.BorderSize = 0;
             this.btnExpandPanel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -297,7 +336,7 @@
             // 
             // SidePanel
             // 
-            this.SidePanel.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.SidePanel.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.SidePanel.Controls.Add(this.btnWeightCalc);
             this.SidePanel.Controls.Add(this.btnCurrencyCalc);
             this.SidePanel.Controls.Add(this.btnExpandPanel);
@@ -305,24 +344,6 @@
             this.SidePanel.Name = "SidePanel";
             this.SidePanel.Size = new System.Drawing.Size(44, 424);
             this.SidePanel.TabIndex = 22;
-            // 
-            // timer
-            // 
-            this.timer.Interval = 5;
-            this.timer.Tick += new System.EventHandler(this.timer_Tick);
-            // 
-            // btnCurrencyCalc
-            // 
-            this.btnCurrencyCalc.FlatAppearance.BorderSize = 0;
-            this.btnCurrencyCalc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCurrencyCalc.Location = new System.Drawing.Point(3, 65);
-            this.btnCurrencyCalc.Name = "btnCurrencyCalc";
-            this.btnCurrencyCalc.Size = new System.Drawing.Size(114, 39);
-            this.btnCurrencyCalc.TabIndex = 22;
-            this.btnCurrencyCalc.TabStop = false;
-            this.btnCurrencyCalc.Text = "CurrencyCalculator";
-            this.btnCurrencyCalc.UseVisualStyleBackColor = true;
-            this.btnCurrencyCalc.Visible = false;
             // 
             // btnWeightCalc
             // 
@@ -337,6 +358,24 @@
             this.btnWeightCalc.UseVisualStyleBackColor = true;
             this.btnWeightCalc.Visible = false;
             // 
+            // btnCurrencyCalc
+            // 
+            this.btnCurrencyCalc.FlatAppearance.BorderSize = 0;
+            this.btnCurrencyCalc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCurrencyCalc.Location = new System.Drawing.Point(3, 65);
+            this.btnCurrencyCalc.Name = "btnCurrencyCalc";
+            this.btnCurrencyCalc.Size = new System.Drawing.Size(114, 39);
+            this.btnCurrencyCalc.TabIndex = 22;
+            this.btnCurrencyCalc.TabStop = false;
+            this.btnCurrencyCalc.Text = "CurrencyCalculator";
+            this.btnCurrencyCalc.UseVisualStyleBackColor = true;
+            this.btnCurrencyCalc.Visible = false;
+            // 
+            // timer
+            // 
+            this.timer.Interval = 5;
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -344,7 +383,7 @@
             this.AutoSize = true;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(412, 423);
+            this.ClientSize = new System.Drawing.Size(393, 420);
             this.Controls.Add(this.SidePanel);
             this.Controls.Add(this.btnSquare);
             this.Controls.Add(this.btnSQRT);
@@ -367,8 +406,12 @@
             this.Controls.Add(this.btnThree);
             this.Controls.Add(this.btnTwo);
             this.Controls.Add(this.btnOne);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.HelpButton = true;
+            this.MaximumSize = new System.Drawing.Size(409, 459);
+            this.MinimumSize = new System.Drawing.Size(409, 459);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Calculator";
             this.SidePanel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
